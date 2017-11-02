@@ -2,3 +2,50 @@
 @import "bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
+
+.jumbotron {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    color: yellow;
+    background-color: black;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+}
+
+// body{
+//     background-color: red;
+//     animation: color-change 50s infinite;
+// }
+
+@keyframes color-change{
+    0%{
+        
+        background-color: blue;
+    }
+    
+    20%{
+        
+        background-color: green; 
+    }
+    40%{
+        
+        background-color: majenta;
+    }
+    60%{
+        
+        background-color: orange; 
+    }
+    80%{
+        
+        background-color: purple;
+    }
+    100%{
+        
+        background-color: pink;
+    }
+}

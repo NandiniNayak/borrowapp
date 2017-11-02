@@ -1,0 +1,64 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @equipment.name %>
+</p>
+
+<p>
+  <strong>Borrowing date:</strong>
+  <%= @equipment.borrowing_date %>
+</p>
+
+<p>
+  <strong>Returning date:</strong>
+  <%= @equipment.returning_date %>
+</p>
+
+<p>
+  <strong>Borrowing time:</strong>
+  <%= @equipment.borrowing_time %>
+</p>
+
+<p>
+  <strong>Returning time:</strong>
+  <%= @equipment.returning_time %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @equipment.location %>
+</p>
+
+<p>
+  <strong>Owner:</strong>
+  <%= @equipment.owner %>
+</p>
+
+<p>
+  <strong>Rule:</strong>
+  <%= @equipment.rule %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @equipment.category %>
+</p>
+
+<p>
+  <strong>Availability:</strong>
+  <%= @equipment.availability %>
+</p>
+
+<p>
+  <strong>Quantity:</strong>
+  <%= @equipment.quantity %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @equipment.user %>
+</p>
+
+<%= link_to 'Edit', edit_equipment_path(@equipment) %> |
+<%= link_to 'Back', equipment_index_path %>

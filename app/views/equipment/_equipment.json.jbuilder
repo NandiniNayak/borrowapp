@@ -1,0 +1,2 @@
+json.extract! equipment, :id, :name, :borrowing_date, :returning_date, :borrowing_time, :returning_time, :location, :owner, :rule, :category, :availability, :quantity, :user_id, :created_at, :updated_at
+json.url equipment_url(equipment, format: :json)

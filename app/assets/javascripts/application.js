@@ -15,3 +15,29 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+
+
+$(document).ready(function(){
+  $('.dropdown-submenu a.test').on("click", function(e){
+    $(this).next('ul').toggle();
+    e.stopPropagation();
+    e.preventDefault();
+  });
+});
+
+
+
+function chBackcolor() {
+    color_tab = ["Cyan", "Magenta", "orange" , "yellow", "crimson", "lime", "teal"];
+    index = getRandomInt(0,7);
+    console.log(index);
+   document.body.style.background = color_tab[index];
+}
+
+
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
+}
