@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'item/page'
+
   resources :equipment
   root 'home#page'
 

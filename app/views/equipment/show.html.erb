@@ -57,7 +57,11 @@
 
 <p>
   <strong>User:</strong>
-  <%= @equipment.user %>
+  <%= @equipment.user.email %>
+</p>
+
+<p>
+  <%= image_tag(@equipment.picture) %>
 </p>
 
 <%= link_to 'Edit', edit_equipment_path(@equipment) %> |

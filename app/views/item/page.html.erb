@@ -1,0 +1,13 @@
+<!--Loop through all the items in the database-->
+<!--and display each item-->
+<% @equipment.each do |equipment| %>
+    <p><%= equipment.name %></p>
+    <p><%= equipment.location %></p>
+    <p><%= equipment.owner %></p>
+    <p><%= equipment.rule %></p>
+    <p><%= equipment.category %></p>
+    <p><%= equipment.availability %></p>
+    <p><%= equipment.quantity %></p>
+    <p><%= equipment.user.email %></p>
+    <p><%= image_tag(equipment.picture) %></p>
+<% end  %>

@@ -10,7 +10,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170117022338) do
+ActiveRecord::Schema.define(version: 20171102015331) do
+
+  create_table "equipment", force: :cascade do |t|
+    t.string   "name"
+    t.date     "borrowing_date"
+    t.date     "returning_date"
+    t.time     "borrowing_time"
+    t.time     "returning_time"
+    t.string   "location"
+    t.string   "owner"
+    t.text     "rule"
+    t.string   "category"
+    t.boolean  "availability"
+    t.integer  "quantity"
+    t.integer  "user_id"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+    t.string   "picture"
+    t.index ["user_id"], name: "index_equipment_on_user_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false

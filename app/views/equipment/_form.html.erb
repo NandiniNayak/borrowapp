@@ -2,18 +2,20 @@
   <%= f.error_notification %>
 
   <div class="form-inputs">
-    <%= f.input :name %>
-    <%= f.input :borrowing_date %>
-    <%= f.input :returning_date %>
-    <%= f.input :borrowing_time %>
-    <%= f.input :returning_time %>
-    <%= f.input :location %>
-    <%= f.input :owner %>
-    <%= f.input :rule %>
-    <%= f.input :category %>
+    <%= f.input :name , placeholder: "Enter the name of the item" %>
+    <%= f.input :borrowing_date , label: "Available from" %>
+    <%= f.input :returning_date , label: "Available To" %>
+    <%= f.input :borrowing_time ,label: "Available from"%>
+    <%= f.input :returning_time , label: "Available To" %>
+    <%= f.input :location , placeholder: "Equipment borrowing location"%>
+    <%= f.input :owner , placeholder: "Enter your Name" %>
+    <%= f.input :rule ,placeholder: "Enter the rules for this item"%>
+    <%= f.input :category , collection: ["Sports", "Books" ,"Technology","any"]%>
     <%= f.input :availability %>
     <%= f.input :quantity %>
-    <%= f.association :user %>
+    <!--provide an input to upload picture-->
+    <%= f.input :picture , as: :file %>
+ 
   </div>
 
   <div class="form-actions">

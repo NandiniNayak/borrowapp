@@ -2,7 +2,7 @@
 
 <h1>Equipment</h1>
 
-<table>
+<table class="table">
   <thead>
     <tr>
       <th>Name</th>
@@ -36,6 +36,7 @@
         <td><%= equipment.availability %></td>
         <td><%= equipment.quantity %></td>
         <td><%= equipment.user %></td>
+        <td><%= image_tag(equipment.picture)%></td>
         <td><%= link_to 'Show', equipment %></td>
         <td><%= link_to 'Edit', edit_equipment_path(equipment) %></td>
         <td><%= link_to 'Destroy', equipment, method: :delete, data: { confirm: 'Are you sure?' } %></td>

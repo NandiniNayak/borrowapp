@@ -25,6 +25,8 @@ class EquipmentController < ApplicationController
   # POST /equipment.json
   def create
     @equipment = Equipment.new(equipment_params)
+    # link the logged in user to the equipment table
+    @equipment.user_id = current_user.id
 
     respond_to do |format|
       if @equipment.save
@@ -69,6 +71,10 @@ class EquipmentController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def equipment_params
-      params.require(:equipment).permit(:name, :borrowing_date, :returning_date, :borrowing_time, :returning_time, :location, :owner, :rule, :category, :availability, :quantity, :user_id)
+      params.require(:equipment).
+      permit(:name, :borrowing_date, :returning_date,
+      :borrowing_time, :returning_time, :location, 
+      :owner, :rule, :category, :availability,
+      :quantity, :user_id , :picture)
     end
 end
