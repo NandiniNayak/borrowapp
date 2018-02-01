@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'test/page'
+
   get 'item/page'
 
   resources :equipment
