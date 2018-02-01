@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  get 'fork/page'
 
+  get 'fork/page'
+  
   get 'item/page'
 
   resources :equipment
