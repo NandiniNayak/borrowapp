@@ -1,8 +1,7 @@
 Rails.application.routes.draw do
-  get 'branch/page'
 
-  get 'test/page'
-
+  get 'fork/page'
+  
   get 'item/page'
 
   resources :equipment
