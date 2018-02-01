@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'branch/page'
+
   get 'test/page'
 
   get 'item/page'
